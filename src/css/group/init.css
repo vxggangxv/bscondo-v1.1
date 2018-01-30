@@ -1,0 +1,21 @@
+@charset 'utf-8';
+
+.tit-contents {position: relative; height: 180px; background: url(http://img.gobs.co.kr/intro/subVisual.jpg) no-repeat center;}
+.tit-contents h2 {position: relative; top: 60px; font-size: 35px; text-align: center; color: #fff; font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif;}
+
+.main-contents {width: 980px; margin: 0 auto; padding-bottom: 100px;}
+.main-contents .area-btn {text-align: center; margin: 60px auto 50px;}
+.main-contents .area-btn.type-2 {margin-top: 50px;}
+.main-contents .area-btn .a-btn {display: inline-block; width: 422px; height: 75px; font-size: 22px; color: #fff; background: #d49f34; font-weight: 700; line-height: 75px; letter-spacing: 0; cursor: pointer;}
+.main-contents .groupEvt-list {width: 980px; margin: 0 auto; margin-top: -20px;}
+.main-contents .groupEvt-list > li {float: left; margin: 0px 10px 0; width: 470px; height: 220px; color: #fff; text-align: center; margin-top: 20px;}
+.main-contents .groupEvt-list > li.nth-1 {background: url(http://img.gobs.co.kr/group/BTN_01.jpg) no-repeat;}
+.main-contents .groupEvt-list > li.nth-2 {background: url(http://img.gobs.co.kr/group/BTN_02.jpg) no-repeat;}
+.main-contents .groupEvt-list > li.nth-3 {background: url(http://img.gobs.co.kr/group/BTN_03.jpg) no-repeat;}
+.main-contents .groupEvt-list > li.nth-4 {background: url(http://img.gobs.co.kr/group/BTN_04.jpg) no-repeat;}
+.main-contents .groupEvt-list > li.nth-5 {background: url(http://img.gobs.co.kr/group/BTN_05.jpg) no-repeat;}
+.main-contents .groupEvt-list > li.nth-6 {background: url(http://img.gobs.co.kr/group/BTN_06.jpg) no-repeat;}
+.main-contents .groupEvt-list > li strong {font-size: 25px; font-weight: 700; display: block; margin-top: 62px;}
+.main-contents .groupEvt-list > li strong .dot {font-size: 18px; position: relative; top: -2px;}
+.main-contents .groupEvt-list > li .p-1 {font-size: 18px; margin-top: 10px;}
+

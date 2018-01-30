@@ -1,0 +1,13 @@
+@charset 'utf-8';
+
+/*--- layout.css 재정의 ---*/
+#contents {width: 978px; margin-top: 0; border-top: 3px solid #717171; margin-bottom: 100px;}
+
+.tit-contents {position: relative; height: 180px; background: #000 url(http://img.gobs.co.kr/reservation/subVisual_confirm.jpg) no-repeat center;}
+.tit-contents h2 {position: relative; top: 60px; font-size: 35px; text-align: center; color: #fff; font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif;}
+
+.main-contents {width: 980px; margin: 0 auto; padding-bottom: 20px;}
+.main-contents.type-confirm {padding-bottom: 0;}
+.main-contents h3 {font-size: 35px; font-weight: 700; color: #434343; font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif; margin: 30px auto 15px; letter-spacing: -1px;}
+
+

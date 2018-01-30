@@ -1,0 +1,17 @@
+.main-contents hr.sun {margin: 30px auto;}
+.main-contents .btn-area {position: relative; text-align: center;}
+.main-contents .btn-area .btn-a {position: relative; display: inline-block; width: 306px; margin: 0 12px; height: 64px; font-size: 20px; font-family: "Nanum Gothic", sans-serif; text-align: center; background: #ECB84A; border: 1px solid #ECB84A; color: #fff; line-height: 64px; border-radius: 4px; box-sizing: border-box; font-weight: 700;}
+.main-contents .btn-area .btn-a.a-1 {
+	border: 1px solid #ECB84A; color: #ECB84A;
+	background: #fefeff; /* Old browsers */
+	background: -moz-linear-gradient(top,  #fefeff 0%, #f1f3f4 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #fefeff 0%,#f1f3f4 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #fefeff 0%,#f1f3f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefeff', endColorstr='#f1f3f4',GradientType=0 ); /* IE6-9 */
+}
+.main-contents .btn-area .btn-a.a-1 > img {position: relative; left: -8px; margin-left: -26px;}
+.main-contents .btn-area .btn-a .rArrow {position: relative; left: 32px; top: 2px;}
+.main-contents .btn-area .btn-a .rArrow:after {width: 10px; height: 10px; border-width: 2px;}
+.main-contents .btn-area .btn-a.a-1 .rArrow:after { border-color: #ecb84a;}
+.main-contents .btn-area .btn-a.a-2 .rArrow:after {border-color: #fff;}
+
