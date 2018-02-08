@@ -155,7 +155,9 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.footer .cf-in .mg- {width: 100%; height: 1px; background: #636363;}
 	.footer .cf-in .s1-2  {font-size: 12px; line-height: 16px; margin-top: 5px; word-break: keep-all;}
 	.footer .cf-in .callFor > .s1-2:last-child {margin-top: -2px; margin-bottom: 3px; letter-spacing: -2px !important; font-size: 11px; font-family: "Dotum", sans-serif;}
-	
+	.footer .a-buisness {border: 1px solid #cdcdcd; font-size: 11px; padding: 1px 3px 2px;}
+	.footer .a-buisness {color: #cdcdcd;}
+	.footer .a-buisness .rArrow:after {border-color: #cdcdcd; width: 5px; height: 5px; top: -1px;}
 	
 	.main-contents.cm-s {margin: 0px auto; padding-top: 20px;}
 	.main-contents.cm-s h3 .title_ico {display: block; width: 14px; text-align: center; margin: 0 auto;}
@@ -317,7 +319,9 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.footer .cf-in .callFor > .s1-2:last-child {margin-top: 2px; margin-bottom: 6px; font-size: 14px; letter-spacing: 0;}
 	.footer .cf-in .callFor.cf0 {font-size: 16px; line-height: 1.4; border: 0;}
 	.footer .cf-in .callFor.cf0 .f-bd {font-size: 28px;}
-	
+	.footer .a-buisness {border: 1px solid #cdcdcd; font-size: 12px; padding: 1px 4px 3px;}
+	.footer .a-buisness {color: #cdcdcd;}
+	.footer .a-buisness .rArrow:after {border-color: #cdcdcd; width: 5px; height: 5px; top: -1px;}
 	
 	.main-contents.cm-s {margin: 0px auto; padding-top: 45px;}
 	.main-contents.cm-s h3 .title_ico {display: block; width: 22px; text-align: center; margin: 0 auto;}
