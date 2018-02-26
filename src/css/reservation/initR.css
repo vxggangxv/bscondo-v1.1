@@ -13,6 +13,16 @@
 	.history .his-tab > li .btn-a:after {content: ""; display: inline-block; height: 107%; vertical-align: middle;}
 	.history .his-tab > li.on .btn-a {background: #ecb84a;}
 	.history .his-tab > li.on .btn-a {color: #fff;}
+	
+	/* 180212_체크인아웃 밑 제공혜택 추가_다솜 */
+	.calender-txt-box {width:92%; margin:0 auto;}
+	.calender-txt-box .cal-bold {font-size:14.5px; line-height:1.3; font-weight:bold;}
+	.calender-txt-box .cal-list {margin-top:6px;}
+	.calender-txt-box .cal-list li, .calender-txt-box .cal-deco {font-size: 13.5px; line-height:1.4;}
+	.calender-txt-box .cal-list li {padding-left:14px; text-indent:-12px;}
+	.calender-txt-box .cal-deco {padding-left:16px; text-indent:-13px;}
+	.calender-txt-box .mt-13 {margin-top:13px;}
+	
 }
 @media (min-width: 980px) {
 	/*--- layout.css 재정의 ---*/
