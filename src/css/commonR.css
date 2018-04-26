@@ -1,6 +1,8 @@
 @charset 'utf-8';
 /* @import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); */
+/*@import url(http://static.go.co.kr/css/faq-v1.1.css);*/
+
 /* mobile_layout3.css 덮어쓰기 */
 #calendar_w .calendar_product_list .week_day_table td.Check-out a .Check-in-txt,
 #calendar_w .calendar_product_list .week_day_table td.Check-in a .Check-in-txt
@@ -40,18 +42,20 @@ body, a {color: #2b2b2b;}
 
 .thColor {color: #ecb84a;}
 .thColor2 {color: #44a8ff;}
+.c-red {color: #c41919 !important;}
 .f-bd {font-weight: bold;}
 
 .mg-, .mgl, .mg-l {position: relative; display: inline-block;}
+.mt-0 {margin-top: 0 !important;}
 .sun {border: none; border-bottom: 1px solid #b4b4b4;}
 
 
-.faqWrap {position: absolute; width: 640px; border: 2px solid #ecb84a; border-top: 0; left: 50%; margin-left: -320px; top: 50%; margin-top: -313px; background: #fff; letter-spacing: -2px;}
+/*.faqWrap {position: absolute; width: 640px; border: 2px solid #ecb84a; border-top: 0; left: 50%; margin-left: -320px; top: 50%; margin-top: -313px; background: #fff; letter-spacing: -2px;}
 .faqWrap {font-family: "Nanum Gothic", sans-serif;}
 .faqWrap h2 {background: #ecb84a; color: #fff; font-size: 23px; width: 100%; height: 62px; text-align: center; padding-top: 21px; font-family: "Nanum Gothic", sans-serif; letter-spacing: -0.5px; box-sizing: border-box; line-height: 1;}
 .faqWrap h2 .s1 {color: #f6ff00;}
 .faqWrap h2 .i-x {position: absolute; top: 16px; right: 16px; }
-.faqWrap .ul1 {overflow-y: auto; height: 531px;}
+.faqWrap .ul1 {overflow-y: auto;}
 .faqWrap .ul1 > li {border-bottom: 1px solid #c8c8c8;}
 .faqWrap .ul1 > li > div {position: relative; line-height: 1.5; padding: 15px 33px 15px 37px; word-break: keep-all;}
 .faqWrap .ul1 > li .d1 {color: #2f2f2f; font-size: 19px; cursor: pointer;}
@@ -68,7 +72,7 @@ body, a {color: #2b2b2b;}
 	-ms-transform: rotate(-45deg);
 	-o-transform: rotate(-45deg);
 	transform: rotate(-45deg);
-}
+}*/
 
 
 .header {z-index: 60;}
@@ -79,6 +83,12 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 .header.on .hd-area .glb {position: fixed; top: 0px; width: 100%; background: #221e1f; border-bottom: 0;}*/
 
 .rWing {position: fixed; top: 220px; z-index: 9; left: 50%; margin-left: 520px;}
+.rWing img {display:block; margin-bottom:1px;}
+/* .rWing img + img {display: block; margin-top:10px;} */
+.m-rWing {z-index:9; position:absolute; width:100px; /*height:71px;*/ right:19px; margin-top:52%;}
+.m-rWing img {width:100%;}
+
+
 @media (max-width: 1310px) {
 	.rWing {right: 10px; left: auto; margin-left: 0;}
 }
@@ -163,8 +173,8 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.main-contents.cm-s h3 .title_ico {display: block; width: 14px; text-align: center; margin: 0 auto;}
 	.main-contents.cm-s h3 {font-size: 24px; font-weight: 600; color: #474646; font-family: 'Noto Sans KR', 'Malgun Gothic', 'Nanum Gothic', sans-serif; margin: 0px auto 20px; letter-spacing: -1px; text-align: center;}
 	.main-contents.cm-s .resortImg {width: 100%;}
-	.main-contents.cm-s > .p-1 {font-size: 15px; font-weight: 700; color: #000; margin: 15px auto; word-break: keep-all;}
-	.main-contents.cm-s > .p-2 {font-size: 13px; color: #757575; word-break: keep-all;}
+	.main-contents.cm-s .p-1 {font-size: 15px; font-weight: 700; color: #000; margin: 15px auto; word-break: keep-all;}
+	.main-contents.cm-s .p-2 {font-size: 13px; color: #757575; word-break: keep-all;}
 	
 
 	.layer-pop-bg {position: fixed; z-index: 200; top: 0; left: 0; width: 100%; height: 100%; background: url(http://img.go.co.kr/black_rgba58.png) repeat;}
@@ -229,9 +239,18 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.contact-pop .area-btn > a .ic-rArrow:after {border-color: #fff; width: 7px; height: 7px; top: -1px; left: 6px;}
 	
 	.contact-pop.type-2 {position: relative; top: 0; text-align: left; width: 100%; left: auto; margin-left: 0;}
+	
+	
+	/* 20180214_실시간 예약 버튼 추가_다솜 */
+	.rtBookingBn {z-index:53;position: fixed; display: block; right: 6px; bottom: 65px;background: rgba(255, 155, 17, 0.76); font-size: 14px; color: #fff; line-height: 1.2; text-align: center; box-sizing: border-box; padding: 8px 20px; box-shadow: 1px 2px 2px 2px rgba(0,0,0, 0.2); letter-spacing: -0.5px;}
+	.rtBookingBn img {width: 19px; margin-bottom: 2px;}
 }
 @media (max-width: 767px) {
 	.rWing {display: none;}
+	.m-rWing {display: block;}
+}
+@media (min-width: 768px) {
+	.m-rWing {display: none;}
 }
 @media (max-device-width: 320px) {
 	.footer .cf-in .s3 {letter-spacing: -1px; line-height: 16px;  margin: 3px auto;}
@@ -257,6 +276,7 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.contact-pop .li-tr .wd-7 {margin-right: 5px;}
 	.contact-pop .li-tr .wd-5 + span, .contact-pop .li-tr .wd-6 + span {margin-left: 1px;}
 	.contact-pop .li-tr .wd-8 {width: 228px;}
+	
 }
 
 
@@ -265,7 +285,7 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.footer {min-width: 1070px;}
 	
 	.header.on .hd-area .glb:after {content: ""; display: block; width: 100%; bottom: 0; box-shadow: 0 1px 8px 2px rgba(0,0,0,.4); z-index: 1;}
-	.header.on .hd-area .gNavDep2 {z-index: -1;}
+	.header.on .hd-area [class^=gNavDep] {z-index: -1;}
 	.header .hd-area {position: relative;}
 	.header .hd-area .gLogo {position: absolute; top: 14px; left: 50px; display: inline-block;}
 	.header .hd-area .gNav {float: right; top: 0px;}
@@ -276,19 +296,20 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.header .hd-area .gNav .gnb > li.nth-6 {display: block; background: #ecb84a;}
 	.header .hd-area .gNav .gnb > li.nth-6 a  {color: #fff;}
 	.header .hd-area .gNav .gnb > li, .header .hd-area .gDep2-nav .gnb-dep2 > li {float: left;}
-	.header .hd-area .gNavDep2 {display: none; position: absolute; width: 100%; left: 0; top: 90px; height: 40px; background: #363032; box-sizing: border-box;}
-	.header .hd-area .gNav .gnb > li.on .gNavDep2, .header .hd-area .gNav .gnb > li:hover .gNavDep2 {display: block;}
-	.header .hd-area .gNav .gnb > li.nth-2 .gNavDep2 .gnbDep2 {}
-	.header .hd-area .gNavDep2 .gnbDep2 {text-align: center; padding-left: 50px;}
-	.header .hd-area .gNavDep2 .gnbDep2 > li {display: inline-block;}
-	.header .hd-area .gNavDep2 .gnbDep2 > li > a {display: block; line-height: 40px; margin-left: 50px;  color: #fff; font-size: 14px;}
-	.header .hd-area .gNav .gnb > li.nth-2 .gNavDep2 .gnbDep2 > li:first-child > a {margin-left: 0;}
-	.header .hd-area .gNavDep2 .gnbDep2 > li > a:hover {color: #bc891c;}
-	.header .d1 {position: absolute; right: 584px; top: 32px;}
+	.header .hd-area [class^=gNavDep], .header .hd-area [class^=gNavDep] {display: none; position: absolute; width: 100%; left: 0; top: 90px; height: 40px; background: #363032; box-sizing: border-box;}
+	.header .hd-area .gNav .gnb > li.on [class^=gNavDep], .header .hd-area .gNav .gnb > li:hover [class^=gNavDep] {display: block;}
+	.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] {}
+	.header .hd-area [class^=gNavDep] [class^=gnbDep] {text-align: center; padding-left: 50px;}
+	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li {display: inline-block;}
+	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {cursor:pointer; display: block; line-height: 40px; margin-left: 50px;  color: #fff; font-size: 14px;}
+	.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] > li:first-child > a {margin-left: 0;}
+	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a:hover, .header .hd-area [class^=gNavDep] [class^=gnbDep] > li.on > a {color: #bc891c;}
+	
+	.header .d1 {position: absolute; right:700px; /* right: 584px; */ top: 32px;}
 	.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
 /*	.header .d1 .faq-a.on, .header.on .d1 .faq-a {color: #44a8ff; border: 1px solid #44a8ff;}*/
 
-	.faqWrap {position: absolute; width: 824px; border: 2px solid #ecb84a; border-top: 0; left: 50%; margin-left: -412px; top: 50%; margin-top: -313px; background: #fff; letter-spacing: -1px;}
+	/*.faqWrap {position: absolute; width: 824px; border: 2px solid #ecb84a; border-top: 0; left: 50%; margin-left: -412px; top: 50%; margin-top: -313px; background: #fff; letter-spacing: -1px;}*/
 	
 	.footer {background: #323232; padding: 15px 0 45px;}
 	.footer .container {position: relative; width: 1150px; margin: 0 auto;}
@@ -307,7 +328,8 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.footer .cf-box > .p-0 {display: none;}
 	.footer .flt-2, .footer .cf-in {padding-left: 152px;}
 	.footer .cf-in {position: relative; font-size: 0; padding-left: 152px;}
-	.footer .cf-in .callFor {position: relative; text-align: center; display: inline-block; margin-top: 5px;  margin-left: 4px; border: 1px solid #c5c5c5; border-radius: 2px; padding: 0; padding: 8px 3px 0 3px; height: 124px; box-sizing: border-box; z-index: 1; color: #fff;}
+	.footer .cf-in:after {content: ""; display: table; clear: both;}
+	.footer .cf-in .callFor {position: relative; text-align: center; float:left; margin-top: 5px;  margin-left: 4px; border: 1px solid #c5c5c5; border-radius: 2px; padding: 0; padding: 8px 3px 0 3px; height: 144px; box-sizing: border-box; z-index: 1; color: #fff;}
 	.footer .cf-in .callFor:first-child {margin-left: 0;}
 	.footer .cf-in .callFor > span {display: block; width: 100%; line-height: 1.5;}
 	.footer .cf-in .s1, .footer .cf-in .s3  {font-size: 17px; font-weight: 700; letter-spacing: 0;}
@@ -415,12 +437,16 @@ background-size: cover; text-align: center; height: 90px; /*height: 250px; borde
 	.privacy-bg .cm-s .d-cont .title:first-child {margin-top: 0;}
 	.term-warp {}
 }
+@media (min-width: 981px) and (max-width: 1024px) {
+	.header .d1 {right: 596px;}
+	.header .hd-area .gNav .gnb > li > a {padding: 0 6px;}	
+}
 @media (min-width: 1370px) {
-	.header .hd-area .gNav .gnb > li > a {padding: 0 28px; font-size: 20px;}
-	.header .hd-area .gNavDep2 {height: 50px;}
-	.header .hd-area .gNavDep2 .gnbDep2 > li > a {line-height: 50px; font-size: 17px;}
+	.header .hd-area .gNav .gnb > li > a {padding: 0 20px; font-size: 20px;}
+	.header .hd-area [class^=gNavDep] {height: 50px;}
+	.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {line-height: 50px; font-size: 17px;}
 	
-	.header .d1 {position: absolute; right: 956px; top: 29px;}
+	.header .d1 {position: absolute; right:994px; top: 29px;}
 	.header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 17px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
 	/*.header .d1 .faq-a.on, .header.on .d1 .faq-a {color: #44a8ff; border: 1px solid #44a8ff;}
 	.header.on .d1 .faq-a {font-weight: 500; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}*/

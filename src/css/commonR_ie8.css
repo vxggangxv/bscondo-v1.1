@@ -1,60 +1,39 @@
 .hidden-md {
-	display: none !important;
+display: none !important;
 }
 .show-md {
-	display: block !important;
+display: block !important;
 }
 
 .container {width: 980px;}
 .footer {min-width: 1070px;}
 
 .header.on .hd-area .glb:after {content: ""; display: block; width: 100%; bottom: 0; box-shadow: 0 1px 8px 2px rgba(0,0,0,.4); z-index: 1;}
-.header.on .hd-area .gNavDep2 {z-index: -1;}
+.header.on .hd-area [class^=gNavDep] {z-index: -1;}
 .header .hd-area {position: relative;}
 .header .hd-area .gLogo {position: absolute; top: 14px; left: 50px; display: inline-block;}
 .header .hd-area .gNav {float: right; top: 0px;}
 .header .hd-area .gNav .gnb {text-align: center; float: right;}
 
-.header .hd-area .gNav .gnb > li > a {display: block; padding: 0 11px; height: 90px; line-height: 90px; font-size: 15px; color: #ffffff; font-weight: 600;}
+.header .hd-area .gNav .gnb > li > a {display: block; padding: 0 13px; height: 90px; line-height: 90px; font-size: 15px; color: #ffffff; font-weight: 600;}
 .header .hd-area .gNav .gnb > li.on > a, .header .hd-area .gNav .gnb > li > a:hover {color: #f0cc7f;}
 .header .hd-area .gNav .gnb > li.nth-6 {display: block; background: #ecb84a;}
 .header .hd-area .gNav .gnb > li.nth-6 a  {color: #fff;}
 .header .hd-area .gNav .gnb > li, .header .hd-area .gDep2-nav .gnb-dep2 > li {float: left;}
-.header .hd-area .gNavDep2 {display: none; position: absolute; width: 100%; left: 0; top: 90px; height: 40px; background: #363032; box-sizing: border-box;}
-.header .hd-area .gNav .gnb > li.on .gNavDep2, .header .hd-area .gNav .gnb > li:hover .gNavDep2 {display: block;}
-.header .hd-area .gNav .gnb > li.nth-2 .gNavDep2 .gnbDep2 {}
-.header .hd-area .gNavDep2 .gnbDep2 {text-align: center; padding-left: 50px;}
-.header .hd-area .gNavDep2 .gnbDep2 > li {display: inline-block;}
-.header .hd-area .gNavDep2 .gnbDep2 > li > a {display: block; line-height: 40px; margin-left: 50px;  color: #fff; font-size: 14px;}
-.header .hd-area .gNav .gnb > li.nth-2 .gNavDep2 .gnbDep2 > li:first-child > a {margin-left: 0;}
-.header .hd-area .gNavDep2 .gnbDep2 > li > a:hover {color: #bc891c;}
-.header .d1 {position: absolute; right: 584px; top: 32px;}
+.header .hd-area [class^=gNavDep], .header .hd-area [class^=gNavDep] {display: none; position: absolute; width: 100%; left: 0; top: 90px; height: 40px; background: #363032; box-sizing: border-box;}
+.header .hd-area .gNav .gnb > li.on [class^=gNavDep], .header .hd-area .gNav .gnb > li:hover [class^=gNavDep] {display: block;}
+.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] {}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] {text-align: center; padding-left: 50px;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li {display: inline-block;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {cursor:pointer; display: block; line-height: 40px; margin-left: 50px;  color: #fff; font-size: 14px;}
+.header .hd-area .gNav .gnb > li [class^=gNavDep] [class^=gnbDep] > li:first-child > a {margin-left: 0;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a:hover, .header .hd-area [class^=gNavDep] [class^=gnbDep] > li.on > a {color: #bc891c;}
+
+.header .d1 {position: absolute; right:700px; /* right: 584px; */ top: 32px;}
 .header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 15px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
 /*	.header .d1 .faq-a.on, .header.on .d1 .faq-a {color: #44a8ff; border: 1px solid #44a8ff;}*/
 
-.faqWrap {position: absolute; width: 824px; border: 2px solid #ecb84a; border-top: 0; left: 50%; margin-left: -412px; top: 50%; margin-top: -313px; background: #fff; letter-spacing: -2px;}
-.faqWrap {font-family: "Nanum Gothic", sans-serif;}
-.faqWrap h2 {background: #ecb84a; color: #fff; font-size: 23px; width: 100%; height: 62px; text-align: center; padding-top: 21px; font-family: "Nanum Gothic", sans-serif; letter-spacing: -0.5px; line-height: 1; box-sizing: border-box;}
-.faqWrap h2 .s1 {color: #f6ff00;}
-.faqWrap h2 .i-x {position: absolute; top: 16px; right: 16px; }
-.faqWrap .ul1 {overflow-y: auto; height: 531px;}
-.faqWrap .ul1 > li {border-bottom: 1px solid #c8c8c8;}
-.faqWrap .ul1 > li > div {position: relative; line-height: 1.5; padding: 15px 33px 15px 37px; word-break: keep-all;}
-.faqWrap .ul1 > li .d1 {color: #2f2f2f; font-size: 19px; cursor: pointer;}
-.faqWrap .ul1 > li .d1.on {color: #ecb84a;}
-.faqWrap .ul1 > li .d1:hover {color: #ecb84a;}
-.faqWrap .ul1 > li .d1 .s-tit {display: inline-block; position: relative;}
-.faqWrap .ul1 > li .d1.on .s-tit:after {content: ""; position: absolute; bottom: 0; left: 0; display: inline-block; width: 100%; height: 1px; background: #ecb84a;}
-.faqWrap .ul1 > li .d2 {color: #545353; font-size: 18px; background: #f1f1f1; padding-left: 48px; display: none;}
-.faqWrap .ul1 > li .d2 {border-top: 1px solid #c8c8c8;}
-.faqWrap .ul1 > li .d1:before, .faqWrap .d2:before {content: "Q."; position: absolute; left: 15px;}
-.faqWrap .ul1 > li .d2:before {content: "A"; color: #fff; background: #ecb84a; border-radius: 50%; width: 24px; height: 24px; text-align: center; display: inline-block; font-size: 16px; text-indent: -2px; box-sizing: border-box;}
-.faqWrap .ul1 > li .d1:after {content: ""; position: absolute; top: 20px; right: 18px;	 display: inline-block; width: 11px; height: 11px; border: 2px solid #858585; border-top: 0; border-right: 0;
-	-webkit-transform: rotate(-45deg);
-	-ms-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
-}
+.faqWrap {position: absolute; width: 824px; border: 2px solid #ecb84a; border-top: 0; left: 50%; margin-left: -412px; top: 50%; margin-top: -313px; background: #fff; letter-spacing: -1px;}
 
 .footer {background: #323232; padding: 15px 0 45px;}
 .footer .container {position: relative; width: 1150px; margin: 0 auto;}
@@ -89,7 +68,6 @@
 .footer .a-buisness {color: #cdcdcd;}
 .footer .a-buisness .rArrow:after {border-color: #cdcdcd; width: 5px; height: 5px; top: -1px;}
 
-
 .main-contents.cm-s {margin: 0px auto; padding-top: 45px;}
 .main-contents.cm-s h3 .title_ico {display: block; width: 22px; text-align: center; margin: 0 auto;}
 .main-contents.cm-s h3 {font-size: 35px; font-weight: 600; color: #474646; font-family: 'Malgun Gothic', 'Nanum Gothic', sans-serif; margin: 0px auto 20px; letter-spacing: -1px; text-align: center;}
@@ -116,7 +94,7 @@
 .contact-pop .i-chk-bef:before, .contact-pop .i-chk-aft:before {content: "*"; display: inline-block; color: #f00; position: relative; top: 2px; font-weight: 700; margin-right: 3px; vertical-align: middle;}
 .contact-pop .i-chk-aft:before {top: -1px; font-size: 14px;}
 .contact-pop .ul-tb {position: relative; width: 660px; margin: 0 auto; font-family: 'Nanum Gothic', sans-serif;}
-.contact-pop .nece {border-bottom: 2px solid #8e929b; border-top: 1px solid #dadada;}
+.contact-pop .nece {border-bottom: 1px solid #8e929b; border-top: 1px solid #dadada;}
 .contact-pop .li-tr:first-child {border-top: 0;}
 .contact-pop .li-tr {position: relative; padding: 10px 0px; font-size: 0; border-top: 1px solid #dadada; letter-spacing: -0.5px;}
 .contact-pop .li-tr > span {position: relative; display: inline-block; font-size: 16px; font-weight: 700; vertical-align: middle;}
@@ -182,12 +160,11 @@
 .privacy-bg .cm-s .d-cont .title:first-child {margin-top: 0;}
 .term-warp {}
 
+.header .hd-area .gNav .gnb > li > a {padding: 0 20px; font-size: 20px;}
+.header .hd-area [class^=gNavDep] {height: 50px;}
+.header .hd-area [class^=gNavDep] [class^=gnbDep] > li > a {line-height: 50px; font-size: 17px;}
 
-.header .hd-area .gNav .gnb > li > a {padding: 0 28px; font-size: 20px;}
-.header .hd-area .gNavDep2 {height: 50px;}
-.header .hd-area .gNavDep2 .gnbDep2 > li > a {line-height: 50px; font-size: 17px;}
-
-.header .d1 {position: absolute; right: 956px; top: 29px;}
+.header .d1 {position: absolute; right:994px; top: 29px;}
 .header .d1 .faq-a {display: inline-block; color: #fff; border: 1px solid #fff; font-size: 17px; text-align: center; line-height: 1.1; padding: 5px 8px; word-break: keep-all; font-weight: 300; letter-spacing: -1px;}
 /*.header .d1 .faq-a.on, .header.on .d1 .faq-a {color: #44a8ff; border: 1px solid #44a8ff;}
 .header.on .d1 .faq-a {font-weight: 500; font-family: "Noto Sans KR", "Nanum Gothic", sans-serif;}*/

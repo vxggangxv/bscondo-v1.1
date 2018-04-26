@@ -75,3 +75,20 @@ $(function () {
 		$('#faq li').show();
 	});
 });
+	
+function toggleOn(itm, type) {
+	if (type == "sib") {
+		$(itm).on('click', function () {
+			var idx = $(this).index();
+			
+			$(this).toggleClass('on').siblings().removeClass('on');
+			//console.log('on');
+		});
+	} else {
+		$(itm).on('click', function () {
+			var idx = $(this).index();
+			$(this).toggleClass('on');
+		});
+	}
+}
+

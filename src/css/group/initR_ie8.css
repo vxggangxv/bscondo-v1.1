@@ -81,3 +81,18 @@ section[class*=-sec] .h2-tit + p {font-size: 18px; text-align: center; line-heig
 .etc-sec .d-box-2 .area-btn02 .a-btn {display: inline; font-size: 34px; font-weight: 700; color: #ecb84a; background: 0; cursor: default; line-height: 1.5;}
 .etc-sec .d-box-2 .area-btn02 .pic-call {position: relative; display: inline-block; width: 40px; height: 40px; background: url(http://img.bscondo.co.kr/group/call_icon.png); vertical-align: middle; top: -4px; left: -4px;}
 .etc-sec .d-box-2 .area-txt {font-size: 22px; color: #474646;}
+
+/* 20180320_접수완료 레이어 팝업_다솜 */
+.group-popup {z-index:9999; display:none; position:fixed; box-sizing:border-box; width:100%; height:100%; top:0; left:0; background:rgba(0, 0, 0, 0.5); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000);}
+.group-popup .popup-wrap {position:relative; max-width:600px; margin:0 auto; top:50%; margin-top:-200px;}
+.group-popup .popup-container {position:relative; box-sizing:border-box; padding:25px 25px 35px; text-align:center; border:1px solid #c5c5c5; background:#fff;}
+.group-popup .popup-container .fc-blue {color:#2876e6}
+.group-popup .popup-container .popup-container {}
+.group-popup .popup-container .popup-cust {padding:5px 0 14px; border-bottom:1px solid #c5c5c5;}
+.group-popup .popup-container .popup-cust p {font-size:24px; line-height:35px; letter-spacing:-1px; color:#131313;}
+.group-popup .popup-container .popup-cust .f-bd {}
+.group-popup .popup-container .popup-cust .f-bd span {font-size:24px; line-height:35px; font-weight:bold;}
+.group-popup .popup-container .popup-cust .popup-txt {font-size:20px;}
+.group-popup .popup-container .popup-cust .popup-txt.pd-tb {padding:6px 0;}
+.group-popup .popup-container .info-txt {padding:15px 0 19px; font-size:16px; line-height:23px; color:#707070;}
+.group-popup .popup-container .btn-close {display:inline-block; min-width:200px; height:50px; font-size:18px; line-height:50px; font-weight:bold; color:#fff; background:#f75c07;}
