@@ -81,6 +81,9 @@ section[class*=-sec] .h2-tit + p {font-size: 18px; text-align: center; line-heig
 .etc-sec .d-box-2 .area-btn02 .a-btn {display: inline; font-size: 34px; font-weight: 700; color: #ecb84a; background: 0; cursor: default; line-height: 1.5;}
 .etc-sec .d-box-2 .area-btn02 .pic-call {position: relative; display: inline-block; width: 40px; height: 40px; background: url(http://img.bscondo.co.kr/group/call_icon.png); vertical-align: middle; top: -4px; left: -4px;}
 .etc-sec .d-box-2 .area-txt {font-size: 22px; color: #474646;}
+.etc-sec .d-box-2 .area-btn02 .a-btn > .txt {position: relative; top: -3px; color: #333; font-size: 21px; font-weight: 400;}
+.etc-sec .d-box-2 .p-2 {font-size: 28px; font-weight: 700; margin-top: 10px; color: #ecb84a;}
+
 
 /* 20180320_접수완료 레이어 팝업_다솜 */
 .group-popup {z-index:9999; display:none; position:fixed; box-sizing:border-box; width:100%; height:100%; top:0; left:0; background:rgba(0, 0, 0, 0.5); filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#60000000,endColorstr=#60000000);}
@@ -96,3 +99,38 @@ section[class*=-sec] .h2-tit + p {font-size: 18px; text-align: center; line-heig
 .group-popup .popup-container .popup-cust .popup-txt.pd-tb {padding:6px 0;}
 .group-popup .popup-container .info-txt {padding:15px 0 19px; font-size:16px; line-height:23px; color:#707070;}
 .group-popup .popup-container .btn-close {display:inline-block; min-width:200px; height:50px; font-size:18px; line-height:50px; font-weight:bold; color:#fff; background:#f75c07;}
+
+/*단체예약 Q&A*/
+.qna-group {position: relative; padding: 35px 0; background: #f9f9f9; color: #474747;}
+.qna-group h2 {text-align: center; font-size: 34px;}
+.qna-group h2 > span {display: inline-block;}
+.qna-group h2 .tit {padding: 0 15px;}
+.qna-group h2 .titBg {width: 112px; height: 16px; background: url(http://img.bscondo.co.kr/group/faqTitBg.png) repeat-x;}
+.qna-list {width: 768px; margin: 25px auto 0;}
+.qna-list > li {position: relative; border-bottom: 1px solid #ccc; letter-spacing: -0.5px;}
+.qna-list > li > div {position: relative; line-height: 1.5; word-break: keep-all; font-family: "Nanum Gothic", sans-serif;}
+.qna-list > li .f-q {padding-left: 82px; padding-right: 54px; font-size: 22px;}
+.qna-list > li .f-q > * {display: inline-block;}
+.qna-list > li .f-q .q-con {position: absolute; left: 40px; font-weight: 700;}
+.qna-list > li .f-q .arr {position: absolute; right: 40px; top: 10px;}
+.qna-list > li .f-q .arr:after {top: -2px; border-color: #bbb; border-width: 2px; width: 12px; height: 12px;}
+.qna-list > li .f-a {background: #fff; height: 0; padding: 0; overflow: hidden; font-size: 19px;}
+.qna-list > li.on .f-q {color: #0293c4;}
+.qna-list > li.on .f-q .arr:after {
+	top: 3px; border-color: #0293c4;
+	-webkit-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+}
+.qna-list > li > div, .qna-list > li.on .f-a {padding: 12px 40px;}
+.qna-list > li.on .f-a {height: auto; border-top: 1px solid #eee;}
+
+/*단체문의 Q&A*/
+.qna-group {padding: 50px 0 55px;}
+.qna-group h2 .titBg {width: 200px;}
+.qna-list {width: 864px; margin: 40px auto 0;}	
+
+/* 20180404_단체문의 텍스트 추가_다솜 */
+.etc-sec .d-cm .c-blue {word-break:keep-all; font-size:22px; color:#0012ff}
+.etc-sec .li-tr .c-lightred {word-break:keep-all; margin-left:72px; color:#ff0000}
