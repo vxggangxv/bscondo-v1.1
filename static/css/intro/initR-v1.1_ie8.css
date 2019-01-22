@@ -1,4 +1,5 @@
 .m-rWing, .m-rWing2 {display: none;}
+.container {width: 100% !important; min-width: 980px;}
 
 /*메인콘텐츠 리뉴얼*/
 .main-contents2 {width: 100%; background: #000; padding-bottom: 50px;}
@@ -9,6 +10,10 @@
 .main-contents2 .area-tit > p {font-size: 27px; margin-top: 5px;}
 .main-contents2 .bg-img {background: #000 url(http://img.bscondo.co.kr/intro/intro_bg.jpg) no-repeat center top; height: 1016px;}
 .main-contents2 .resortImg {display: block; margin: 50px auto 0;}
+/* 181206 온양온천 시티투어 추가 다솜 */
+.main-contents2 .resortBn {display: block; margin: 0 auto;}
+.main-contents2 .resortBn a {position: relative; width: 980px; margin: 0 auto;}
+.main-contents2 .resortBn a img {position: relative; width: 100%;}
 .main-contents2 .btn-area {position: relative; text-align: center; margin: -305px auto 0;}
 .main-contents2 .btn-area .btn-a {position: relative; display: inline-block; width: 306px; margin: 0 12px; height: 64px; font-size: 20px; font-family: "Nanum Gothic", sans-serif; text-align: center; background: #ECB84A; border: 1px solid #ECB84A; color: #fff; line-height: 64px; border-radius: 4px; box-sizing: border-box; font-weight: 700;}
 .main-contents2 .btn-area .btn-a.a-1 {
@@ -41,3 +46,6 @@
 .weath-wrap .weath-box .tem-txt span {display:inline-block; letter-spacing:-2px;}
 .weath-wrap .weath-box .tem-txt .tem-num {min-width:38px; padding-right:4px; font-size:34px; text-align:right; line-height:34px;}
 .weath-wrap .weath-box .tem-txt .tem-cel {position:absolute; font-size:24px; top:12px}
+
+/* 20180518_푸터 수정_다솜 */
+.footer-2 {margin-top:0;}

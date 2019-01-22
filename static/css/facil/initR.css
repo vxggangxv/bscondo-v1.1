@@ -1,10 +1,28 @@
 @charset 'utf-8';
 
+/*--- bxSlider 재정의 ---*/
+.bx-wrapper {position: relative; margin: 0 auto; border: none; width: 1000px; box-shadow: none;}
+.bx-wrapper .bx-viewport {border: none; box-shadow: none; left: 0; background: none;}
+.bx-controls {}
+.bx-wrapper .bx-controls-direction {position: absolute; width: 100%; width: 100%; left: 0; top: 50%; margin-top: -22.5px;}
+#wrap .bx-wrapper .bx-controls-direction a {display: block;}
+.bx-wrapper .bx-controls-direction a {background: none; width: auto; height: auto; top: 0; margin-top: 0; z-index: 1;}
+.bx-wrapper .bx-prev {left: 20px;}
+.bx-wrapper .bx-next {right: 20px;}
+.bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-controls-auto
+, .bx-wrapper .bx-controls.bx-has-controls-auto.bx-has-pager .bx-pager {display: none;}
+
 .mainImg, .mainImg-m {display: block; margin: 0 auto;}
 @media (max-width: 979px) {
+	.bx-wrapper .bx-controls-direction a {width: 12px;}
+	.bx-wrapper .bx-controls-direction {margin-top: -11.5px;}
+	.bx-wrapper .bx-prev {left: 10px;}
+	.bx-wrapper .bx-next {right: 10px;}
+	
 	.main-contents.cm-s {}
 	.main-contents .d-part {margin-top: 30px;}
-	.main-contents .d-part h3 {font-size: 20px; margin-bottom: 5px;}
+	.main-contents .d-part h3 {font-size: 20px; margin-bottom: 5px; text-align: center;}
+	.main-contents .d-part h3 .title_ico {display: block; margin: 0 auto;}
 	.main-contents .d-part:first-child {margin-top: 10px;}
 	.main-contents .p-txt {font-size: 13px; text-align: center; margin-bottom: 12px; letter-spacing: -0.5px;}
 	.main-contents .basicImg {width: 100%;}
@@ -40,6 +58,7 @@
 	.main-contents .bbq-part .d-cont .d-row .flt-1 p.nth-2 {font-size: 18px; letter-spacing: 1px; margin-top: 5px;}
 	.main-contents .bbq-part .d-cont .d-row .flt-2 {font-size: 13px; /*line-height: 30px;*/ word-break: keep-all; padding: 5px 20px;}
 	.main-contents .bbq-part .d-cont .d-row .flt-2 .s-1 {color: #d56d08;}
+    .main-contents .bbq-part .d-cont .d-row .flt-2 .bg-red {display:block; width:125px; height:18px; margin:0 auto; margin-top:5px; font-size:13px; font-weight:bold; line-height:18px; text-align:center; color:#fff; background:#c02323;}
 	
 	.main-contents .bbq-part .d-bottom {border-top: 1px solid #b5b5b5; padding: 10px 15px; font-size: 14px;}
 	.main-contents .bbq-part .d-bottom [class*=flt-] {position: relative;}
@@ -53,6 +72,8 @@
 	.main-contents .p-txt, .main-contents .bbq-part .d-cont .d-row .flt-2 {font-size: 12px;}
 }
 @media (min-width: 980px) {
+	.bx-wrapper .bx-controls-direction {margin-top: -21.5px;}
+	
 	.main-contents.cm-s {padding-top: 30px;}
 	.main-contents .d-part {margin-top: 55px;}
 	.main-contents .d-part h3 {}
@@ -90,6 +111,7 @@
 	.main-contents .bbq-part .d-cont .d-row .flt-1 p.nth-2 {font-size: 24px;}
 	.main-contents .bbq-part .d-cont .d-row .flt-2 {width: 718px; padding-left: 30px; line-height: 33px; letter-spacing: -1px; word-break: keep-all; border-left: 1px solid #b5b5b5;}
 	.main-contents .bbq-part .d-cont .d-row .flt-2 .s-1 {color: #d56d08;}
+    .main-contents .bbq-part .d-cont .d-row .flt-2 .bg-red {display:inline-block; width:140px; height:22px; margin-left:10px; font-size:16px; font-weight:bold; line-height:22px; text-align:center; color:#fff; background:#c02323;}
 	
 	.main-contents .bbq-part .d-bottom {border-top: 1px solid #b5b5b5; padding: 20px 25px;}
 	.main-contents .bbq-part .d-bottom [class*=flt-] {position: relative; float: left; width: 50%;}

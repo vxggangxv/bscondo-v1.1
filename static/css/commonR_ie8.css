@@ -5,7 +5,7 @@ display: none !important;
 display: block !important;
 }
 
-/*.container {width: 980px;}*/
+.container {width: 980px;}
 .footer {min-width: 1070px;}
 
 .header.on .hd-area .glb:after {content: ""; display: block; width: 100%; bottom: 0; box-shadow: 0 1px 8px 2px rgba(0,0,0,.4); z-index: 1;}
@@ -56,9 +56,11 @@ display: block !important;
 .footer-2 .cf-in .callFor span {display:inline-block; letter-spacing:-1px;}
 .footer-2 .cf-in .callFor .s1 {font-size:24px; font-weight:500; color:#edae18}
 .footer-2 .cf-in .callFor .s1-2 {margin-left:14px; font-size:18px; color:#ffea5f}
-.footer-2 .cf-in .callFor .s2 {float:left; font-size:24px; line-height:24px; font-weight:bold; color:#fff}
+.footer-2 .cf-in .callFor .s2 {font-size:24px; line-height:24px; font-weight:bold; color:#fff}
 .footer-2 .cf-in .callFor .s2 img {margin-right:4px}
-.footer-2 .cf-in .callFor .s3 {float:left; margin-left:12px; padding-top:2px font-size:16px; color:#fff}
+.footer-2 .cf-in .callFor .s3 {position: relative; top: -2px; margin-left:5px; font-size:16px; color:#fff}
+.footer-2 .cf-in .callFor .s4 {display: block; margin-top: 3px; color: #fff; font-size: 20px; font-weight: 800; letter-spacing: -0.5px;}
+
 .footer-2 .flt-box {margin-top:30px;}
 .footer-2 .flt-1, .footer-2 .flt-2 {float:left}
 .footer-2 .flt-1 {width:203px; margin:0 25px 21px 0; text-align:right} 

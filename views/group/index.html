@@ -12,14 +12,15 @@
 	
 	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/reset.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css">
+<!--
 	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/commonR.css">
 	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/group/initR.css">
-
-<!--
-	<link rel="stylesheet" type="text/css" href="../../src/css/commonR.css">
-	<link rel="stylesheet" type="text/css" href="../../src/css/group/initR.css">
 -->
+
+	<link rel="stylesheet" type="text/css" href="../../static/css/commonR.css">
+	<link rel="stylesheet" type="text/css" href="../../static/css/group/initR.css">
 	
+	<!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>	 -->
 	
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
@@ -28,7 +29,7 @@
 	<script src="http://static.bscondo.co.kr/js/common.js"></script>
 	<!--<script src="../../static/js/common.js"></script>-->
 	<!-- 20180321 js 추가 -->
-<!--	<script src="../../src/js/group/init.js"></script>-->
+<!--	<script src="../../static/js/group/init.js"></script>-->
 	<script src="http://static.bscondo.co.kr/js/group/init.js"></script>
 
 	
@@ -62,10 +63,12 @@
 				<div class="glb clr">
 					<a href="/" class="gLogo"><img src="http://img.bscondo.co.kr/top_logo.png" alt="비에스앤리조트로고"></a>
 
+<!--
 					<div class="d1">
 						<a class="faq-a show-md" id="faq-a" href="javascript:free_layer();">무료숙박권 이벤트 안내</a>
 						<a class="mFaq-a show-xs" id="mFaq-a" href="javascript:free_layer();"><span><img src="http://img.ocean2you.co.kr/renew/m_icon.png">이벤트 안내</span></a>
 					</div>
+-->
 
 					<nav class="gNav show-md">
 						<ul class="gnb clr">
@@ -107,6 +110,9 @@
 							</li>
 							<li class="nth-7 ">
 								<a href="/reservation/?dd=Sws5TzdVKg==">예약확인</a>
+							</li>
+							<li>
+								<a href="">장단기숙박</a>
 							</li>
 							<li class="nth-6 ">
 								<a href="/reservation/">객실예약</a>
@@ -179,9 +185,13 @@
 					<p class="p-2">
 						BS도고콘도는 천연 유황온천의 보양 휴양과편안한<br> 부대시설은 물론, 온천 워터파크 파라다이스 도고와<br> 단, 5분 거리, 리솜스파캐슬과 25분 거리에 있는 등<br> 뛰어난 접근성을 자랑합니다.
 					</p>
+					<p class="p-2 type-2">
+						또한 야구선수들의 전지훈련 단체숙박업소로도 각광받고 있습니다.
+					</p>
 					<hr class="sun">
-					<p class="txt_wr">
-						콘도 내에 바베큐장, 한식당, 대식당, 연회장 및<br> 노래방, 편의점, 오락실 등을 갖추고 있어 더욱 편안한<br> 시간을 드립니다.
+					<p class="txt_wr c-red">
+						BS콘도는 200객실의 대형리조트이며<br>
+						1,500명까지 동시 이용이 가능합니다.
 					</p>
 					<!--popOpen 클래스 제거-->
 					<p class="area-btn" id="group_mobile" style="cursor:pointer"><a class="" onclick="faq_move()">단체 문의하기 <span class="ic-rArrow"></span></a></p>
@@ -289,22 +299,62 @@
 							<figcaption>편의점</figcaption>
 						</figure>
 					</li>
+					<!-- 180820 분임토의실 수정 -->
 					<li class="li-item">
 						<figure>
 							<span class="s-bg"></span>
-							<img src="http://img.bscondo.co.kr/group/facil_07.jpg" alt="오락실">
-							<figcaption>오락실</figcaption>
+							<img src="http://img.bscondo.co.kr/group/facil_08_2.jpg" alt="분임토의실(1~6호실)">
+							<figcaption>분임토의실(1~5호실)</figcaption>
 						</figure>
 					</li>
-					<!-- 180530 분임토의실 추가 -->
 					<li class="li-item">
 						<figure>
 							<span class="s-bg"></span>
 							<img src="http://img.bscondo.co.kr/group/facil_08.jpg" alt="분임토의실(1~6호실)">
-							<figcaption>분임토의실(1~6호실)</figcaption>
+							<figcaption>분임토의실(7~8호실)</figcaption>
 						</figure>
 					</li>
+					<!-- // -->
 				</ul>
+				
+				<ul class="ul-list-2 clr">
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/music_01.jpg" class="hidden-xs" alt="춤연습장, 보컬연습실이 필요한 단체숙소로 추천">
+							<img src="http://img.bscondo.co.kr/m/group/music_01.jpg" class="show-xs" alt="춤연습장, 보컬연습실이 필요한 단체숙소로 추천">
+							<figcaption>춤연습장, 보컬연습실이 필요한 단체숙소로 추천</figcaption>
+						</figure>
+                        <p class="li-txt ht-1"><span>걸그룹 댄스연습실, 아이돌 대형연습실, 보이그룹 춤연습실, 뮤지컬 연습실, 댄스연습장, 대형연습장, 춤연습장, 합숙연습실, 합숙연습장, 합숙연습, 보컬연습실</span></p>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/music_02.jpg" class="hidden-xs" alt="합주연습실이 필요한 단체숙소로 추천">
+							<img src="http://img.bscondo.co.kr/m/group/music_02.jpg" class="show-xs" alt="합주연습실이 필요한 단체숙소로 추천">
+							<figcaption>합주연습실이 필요한 단체숙소로 추천</figcaption>
+						</figure>
+				        <p class="li-txt ht-1"><span>관현악단 합주실, 오케스트라 합주연습실, 국악관현악단 합주연습장, 악단 합숙연습, 뮤지컬악단 합주장소, 교향악단 합주연습장소, 현악단 연습장소, 교회현악단 합숙연습실, 교회관현악단 합숙연습장, 전자현악단 단체숙박, 국악현악단 단체숙소</span></p>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/groupEvent_01.jpg" class="hidden-xs" alt="초, 중, 고, 대학교, 학술답사 등의 단체숙소와 행사로 추천">
+							<img src="http://img.bscondo.co.kr/m/group/groupEvent_01.jpg" class="show-xs" alt="초, 중, 고, 대학교, 학술답사 등의 단체숙소와 행사로 추천">
+							<figcaption>초, 중, 고, 대학교, 학술답사 등의 단체숙소와 행사로 추천</figcaption>
+						</figure>
+                        <p class="li-txt"><span>수학여행, 체험학습, 수련회, 체육대회, MT, OT, 답사, 학회, 고적답사,<br>유적답사, 문화유적답사, 문화유산답사, 역사유산답사 등</span></p>
+					</li>
+					<li class="li-item">
+						<figure>
+							<span class="s-bg"></span>
+							<img src="http://img.bscondo.co.kr/group/groupEvent_02.jpg" class="hidden-xs" alt="회사, 기업, 종교, 가족 등의 단체숙소와 행사로 추천">
+							<img src="http://img.bscondo.co.kr/m/group/groupEvent_02.jpg" class="show-xs" alt="회사, 기업, 종교, 가족 등의 단체숙소와 행사로 추천">
+							<figcaption>회사, 기업, 종교, 가족 등의 단체숙소와 행사로 추천</figcaption>
+						</figure>
+				        <p class="li-txt"><span>워크샵, 세미나, 연수원, 기업OT, 기업행사, 야유회, 신녀회, 송년회,<br>환갑, 회갑, 돌잔치, 결혼식, 상견례, 환갑잔치, 칠순잔치 등</span></p>
+					</li>
+                </ul>
 				
 				<!-- 180214 버튼 추가 -->
 				<p class="area-btn"><a href="javascript:;" class="" onclick="faq_move()">단체 문의하기 <span class="ic-rArrow"></span></a></p>
@@ -640,7 +690,7 @@
 					<p class="p-1">단체 예약 전용 번호로 연락 주시면 담당자가 빠르게 안내해 드리겠습니다. </p>
 					<!--180612 내용추가-->
 					<p class="area-btn02"><a href="tel:010-9544-8281" class="a-btn"><span class="pic-call"></span> <span class="num">010-9544-8281</span> <span class="txt">(주중/주말 06시~02시)</span></a></p>
-					<p class="p-2"><img class="pic-sms" src="http://img.bscondo.co.kr/group/sms_icon.jpg" alt="이메일"> help@ocean2you.co.kr</p>
+					<p class="p-2"><img class="pic-sms" src="http://img.bscondo.co.kr/group/sms_icon.jpg" alt="이메일"> help@bscondo.co.kr</p>
 				</div>
 			</section>
 
@@ -710,6 +760,8 @@
 							<p class="s1">단체문의<span class="s1-2">워크샵, 학생, 산업단체 / 단체이용 관련 문의</span></p>
 							<span class="s2"><img src="http://img.bscondo.co.kr/i_call.png" alt="전화아이콘">010-9544-8281</span>
 							<span class="s3">(주중/주말 06시 ~ 02시)</span>
+							<!--180612 내용추가-->
+							<span class="s4"><img class="i-mail" src="http://img.bscondo.co.kr/group/icon_mail.jpg" alt="메일"> help@bscondo.co.kr</span>
 						</a>
 					</div>
 				</div>

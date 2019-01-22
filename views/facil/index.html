@@ -14,7 +14,7 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css">
 	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/commonR.css">
 	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/facil/initR.css">
-	<!--<link rel="stylesheet" type="text/css" href="../../src/css/facil/initR.css">-->
+<!--	<link rel="stylesheet" type="text/css" href="../../static/css/facil/initR.css">-->
 	
 	
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
@@ -22,6 +22,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
 	
 	<script src="http://static.bscondo.co.kr/js/common.js"></script>
+	<script src="http://static.bscondo.co.kr/js/facil/init.js"></script>
+<!--	<script src="../../static/js/facil/init.js"></script>-->
 
 	<script>
 		WebFont.load({
@@ -223,7 +225,15 @@
 						청결하고 맛있는 한식당에서 맛있게 즐기세요. <br>
 						※ 한식당은 토요일과 일요일 아침에만 뷔페 형태로 운영됩니다.
 					</p>
-					<figure><img class="basicImg" src="http://img.bscondo.co.kr/facil/facil_02.jpg" alt="한식당"></figure>
+					<!--180820 한식당 슬라이더 업데이트-->
+					<div class="bxBox">
+						<ul class="bxS" id="bxS-1">
+							<li><img class="basicImg" src="http://img.bscondo.co.kr/facil/facil_02.jpg" alt="한식당"></li>
+							<li><img class="basicImg" src="http://img.bscondo.co.kr/facil/facil_02_2.jpg" alt="한식당"></li>
+							<li><img class="basicImg" src="http://img.bscondo.co.kr/facil/facil_02_3.jpg" alt="한식당"></li>
+						</ul>
+					</div>
+<!--					<figure><img class="basicImg" src="http://img.bscondo.co.kr/facil/facil_02.jpg" alt="한식당"></figure>-->
 				</div>
 				<div class="d-part nth-3">
 					<h3><img src="http://img.bscondo.co.kr/title_icon.png" alt="아이콘" class="title_ico"/>대식당</h3>
@@ -241,6 +251,16 @@
 					</p>
 					<figure><img class="basicImg" src="http://img.bscondo.co.kr/facil/facil_04.jpg" alt="연회장"></figure>
 				</div>
+				<!-- 180530 분임토의실 추가 -->
+				<div class="d-part nth-8">
+					<h3><img src="http://img.bscondo.co.kr/title_icon.png" alt="아이콘" class="title_ico"/>분임토의실 (1~6호실)</h3>
+					<p class="p-txt">
+						리조트 내에 위치한 토의실에서 <span class="show-xs"></span>학교, 기업, 단체 등의 토론, 강의 등을 위한<span class="show-md"></span>
+						<span class="show-xs"></span>6개의 분임토의실이 준비되어 있습니다.
+					</p>
+					<figure><img class="basicImg" src="http://img.bscondo.co.kr/facil/facil_08.jpg" alt="연회장"></figure>
+				</div>
+				
 				<div class="d-part nth-5">
 					<h3><img src="http://img.bscondo.co.kr/title_icon.png" alt="아이콘" class="title_ico"/>노래방</h3>
 					<p class="p-txt">
@@ -257,6 +277,8 @@
 					</p>
 					<figure><img class="basicImg" src="http://img.bscondo.co.kr/facil/facil_06.jpg" alt="편의점"></figure>
 				</div>
+				<!--180820 오락실 삭제-->
+<!--
 				<div class="d-part nth-7">
 					<h3><img src="http://img.bscondo.co.kr/title_icon.png" alt="아이콘" class="title_ico"/>오락실</h3>
 					<p class="p-txt">
@@ -265,6 +287,7 @@
 					</p>
 					<figure><img class="basicImg" src="http://img.bscondo.co.kr/facil/facil_07.jpg" alt="오락실"></figure>
 				</div>
+-->
 				
 			</section>
 
@@ -273,98 +296,86 @@
 		
 		
 		<div class="clr"></div>
+		<!-- 20180517 푸터 수정 / footer-2로 클래스 변경 -->
 		<footer class="footer-2">
 			<div class="container clr">
 
 				<ul class="f_menu clr">
-					<li><a href="javascript: void(0);" onclick="javascript: $('#privacy-bg, .term-wrap').show();">이용약관</a></li>
-					<li><a href="javascript: void(0);" onclick="javascript: $('#privacy-bg, .privacy-wrap').show();">개인정보처리방침</a></li>
+					<li><a href="javascript:;" onclick="$('#privacy-bg, #privacy-bg .term-wrap').show();">이용약관</a></li>
+					<li><a href="javascript:;" onclick="$('#privacy-bg, #privacy-bg .privacy-wrap').show();">개인정보처리방침</a></li>
 				</ul>
-				
-				<!-- 20180517 텍스트 추가 및 수정 -->
-				<!--<div class="cf-in">
-					<p class="p-0">&lt;고객센터 안내&gt;</p>
-					<div class="cf-in">
-						<div class="callFor cf0">
-							<span class="f-bd">고객센터 안내</span>
-							문의에 따라 해당 고객센터로<br>
-							전화주시면,문의사항을<br>
-							해결해 드리겠습니다.
-						</div>
-						<a class="callFor cf1" >
-							<span class="s1">예약문의</span>
-							<span class="mg-"></span>
-							<span class="s1-2"><span class="xs-hidden">&#40;</span>확정, 변경, 취소<span class="xs-hidden">&#41;</span><span class="xs-block"></span>/이벤트 문의</span>
-							<span class="s3"><img src="http://img.ocean2you.co.kr/renew/i_call.png" alt="전화아이콘"> 1666-6701</span>-->
-							<!--<span class="s1-2">주중 09~18시<span class="hidden-xs"> </span>/<span class="hidden-xs"> </span>주말 09~17시</span>-->
-						<!--	<span class="s1-2">주중 09:30 ~ 25:00<br>주말 09:30 ~ 24:00</span>
-						</a>
-						<a class="callFor cf2" >
-							<span class="s1">프론트</span>
-							<span class="mg-"></span>
-							<span class="s1-2"><span class="xs-hidden">&#40;</span>체크인, 체크아웃<span class="xs-block"></span>시설이용문의<span class="xs-hidden">&#41;</span></span>
-							<span class="s3"><img src="http://img.ocean2you.co.kr/renew/i_call.png" alt="전화아이콘"> 041-428-9422~3</span>
-							<span class="s1-2">주중/주말 06시 ~ 02시</span>
-						</a>
-						<a class="callFor cf3" >
-							<span class="s1">단체문의</span>
-							<span class="mg-"></span>
-							<span class="s1-2"><span class="xs-hidden">&#40;</span>워크샵, 학생단체,<span class="xs-block"></span> 산업단체 등<span class="xs-hidden">&#41;</span></span>
-							<span class="s3"><img src="http://img.ocean2you.co.kr/renew/i_call.png" alt="전화아이콘"> 010-9544-8281</span>
-							<span class="s1-2">주중/주말 06시 ~ 02시</span>
-						</a>
-					</div>-->
 
-					<!-- 20180517 텍스트 추가 및 수정 -->
-					<div class="cf-box clr">
-						<p class="p-0">고객센터 안내</p>
-						<p class="p-1">문의사항에 따라 아래의 고객센터로 연락 부탁드립니다.</p>
-						
-						<!-- 20180517 태그 수정 및 변경 -->
-						<div class="cf-in">
-							<a class="callFor cf1 clr">
-								<p class="s1">예약문의<span class="s1-2">예약 확정, 변경, 취소 / 이벤트 관련 문의</span></p>
-								<span class="s2"><img src="http://img.bscondo.co.kr/i_call.png" alt="전화아이콘">1666-6701</span>
-								<span class="s3">(주중 09시 30분 ~ 25시 / 주말 09시 30분 ~ 24시)</span>
-							</a>
-							<a class="callFor cf2 clr">
-								<p class="s1">프론트<span class="s1-2">체크인, 체크아웃 / 시설이용 관련 문의</span></p>
-								<span class="s2"><img src="http://img.bscondo.co.kr/i_call.png" alt="전화아이콘">041-428-9422~3</span>
-								<span class="s3">(주중/주말 06시 ~ 02시)</span>
-							</a>
-							<a class="callFor cf3 clr">
-								<p class="s1">단체문의<span class="s1-2">워크샵, 학생, 산업단체 / 단체이용 관련 문의</span></p>
-								<span class="s2"><img src="http://img.bscondo.co.kr/i_call.png" alt="전화아이콘">010-9544-8281</span>
-								<span class="s3">(주중/주말 06시 ~ 02시)</span>
-							</a>
-						</div>
+				<!-- 20180517 텍스트 추가 및 수정 -->
+				<div class="cf-box clr">
+					<p class="p-0">고객센터 안내</p>
+				    <p class="p-1">문의사항에 따라 아래의 고객센터로 연락 부탁드립니다.</p>
+				    
+				    <!-- 20180517 태그 수정 및 변경 -->
+					<div class="cf-in">
+						<a class="callFor cf1 clr">
+							<p class="s1">예약문의<span class="s1-2">예약 확정, 변경, 취소 / 이벤트 관련 문의</span></p>
+							<span class="s2"><img src="http://img.bscondo.co.kr/i_call.png" alt="전화아이콘">1666-6701</span>
+							<span class="s3">(주중 09시 30분 ~ 25시 / 주말 09시 30분 ~ 24시)</span>
+						</a>
+						<a class="callFor cf2 clr">
+							<p class="s1">프론트<span class="s1-2">체크인, 체크아웃 / 시설이용 관련 문의</span></p>
+							<span class="s2"><img src="http://img.bscondo.co.kr/i_call.png" alt="전화아이콘">041-428-9422~3</span>
+							<span class="s3">(주중/주말 06시 ~ 02시)</span>
+						</a>
+						<a class="callFor cf3 clr">
+							<p class="s1">단체문의<span class="s1-2">워크샵, 학생, 산업단체 / 단체이용 관련 문의</span></p>
+							<span class="s2"><img src="http://img.bscondo.co.kr/i_call.png" alt="전화아이콘">010-9544-8281</span>
+							<span class="s3">(주중/주말 06시 ~ 02시)</span>
+						</a>
 					</div>
-					<!--// -->
-				
-				<!--<div class="flt-1 clr">
-					<img class="f-logo" src="http://img.bscondo.co.kr/footer_logo.png" alt="bscond">
-				</div>-->
-				<div class="flt-1 clr">
-				    <!-- 20180517 이미지 변경 -->
-					<img class="f-logo" src="http://img.bscondo.co.kr/footer_logo2.png" alt="BS콘도 도고온천 호텔앤리조트">
 				</div>
-									<a href="http://www.bscondo.co.kr/member/logout.php" style="color:white">로그아웃</a>
-								<div class="flt-2 clr">
-					<address>
-						<!-- 20180517 텍스트, 태그 추가 및 수정 -->
-                        <p class="nth-1">
-                            (주)비에스투어앤리조트<br>
-                            대표자 : 공병식<br>
-                            주소 : 충청남도 아산시 도고면 기곡로62번길 6-8<br>
-                            사업자등록번호 : 312-86-43769 <br>
-                            통신판매업 : 2017-충남아산-0196<span class="intv"></span><a href="http://www.ftc.go.kr/www/bizCommView.do?key=232&amp;apv_perm_no=2017452030130200193&amp;pageUnit=10&amp;searchCnd=bup_nm&amp;searchKrwd=%EB%B9%84%EC%97%90%EC%8A%A4%ED%88%AC%EC%96%B4%EC%95%A4%EB%A6%AC%EC%A1%B0%ED%8A%B8&amp;pageIndex=1" target="_blank">▶사업자정보확인</a><br>
-                            관광사업등록번호 : 제 2013-000001호<span class="intv"></span>메일 : dogo121212@naver.com                            <small>COPYRIGHT ⓒ (주)비에스투어앤리조트 ALL RIGHT RESERVED</small>
-                        </p>
-					</address>
-					
+				<!--// -->
+				
+				<!-- 180529 수정 -->
+				<div class="flt-box clr">
+                    <div class="flt-1">
+                        <!-- 20180517 이미지 변경 -->
+                        <img class="f-logo" src="http://img.bscondo.co.kr/footer_logo2.png" alt="BS콘도 도고온천 호텔앤리조트">
+                    </div>
+
+                    <div class="flt-2">
+                        <address>
+                            <!-- 20180517 텍스트, 태그 추가 및 수정 -->
+                            <p class="nth-1">
+                                (주)비에스투어앤리조트<br>
+                                대표자 : 공병식<br>
+                                주소 : 충청남도 아산시 도고면 기곡로62번길 6-8<br>
+                                사업자등록번호 : 312-86-43769<br>
+                                통신판매업 : 2017-충남아산-0196<span class="intv"></span>▶사업자정보확인<br>
+                                관광사업등록번호 : 제 2013-000001호<span class="intv"></span>메일 : dogo121212@naver.com
+                                <!--<small>COPYRIGHT ⓒ (주)비에스투어앤리조트 ALL RIGHT RESERVED</small>-->
+                            </p>
+                        </address>
+                    </div>
+				</div>
+				
+				<!-- 180529 고코투어 추가 -->
+				<div class="flt-box clr">
+                    <div class="flt-1">
+                        <img class="f-logo goco" src="http://img.bscondo.co.kr/f_gcLogo.png" alt="최고의 할인여행 고코투어">
+                    </div>
+
+                    <div class="flt-2">
+                        <address>
+                            <p class="nth-1">
+                                (주)바로네트웍스<br>
+                                서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워)<br>
+                                사업자번호 : 332-85-00016<span class="intv type01"></span>통신판매업 : 제 2009-4290040-30-2-0033호<br>
+                                여행업등록번호 : 제2015-02호<br>
+                                여행영업보증서 : 국내여행 제100-000-2015 0144 5816호<br>
+                                ※ 바로네트웍스는 BS콘도의 공식 온라인 총판으로서 온라인 예약 및<br> 결제를 대행합니다. 
+                            </p>
+                        </address>
+                    </div>
 				</div>
 			</div>
 		</footer>
+		
 		
 		
 	</div>

@@ -1,3 +1,5 @@
+.rWing {top: 290px;}
+
 .container {width: 100%;}
 .main-contents {padding: 35px 0 30px;}
 .main-contents .d-part {position: relative; text-align: center; padding-top: 25px;}
@@ -5,7 +7,7 @@
 
 .main-contents .bxP {position: relative; background: #fff1d1; padding: 10px 0px; margin-top: 30px;}
 .main-contents .bxP > li {float: left; width: 22%; margin-left: 2.45%;}
-.main-contents .bxP > li > a {display:  block; position: relative;}
+.main-contents .bxP > li > a {display:  block; position: relative; height:63px; overflow:hidden;}
 .main-contents .bxP > li > a:first-child {margin-left: 0;}
 .main-contents .bxP > li > a img {width: 100%;}
 
@@ -23,6 +25,7 @@
 .main-contents .drx_txt th,.drx_txt td {padding: 5px 5px; vertical-align: top; word-break: keep-all;}
 .main-contents .drx_txt th {font-weight: bold; color: #474646; letter-spacing: -1px; width: 17%;}
 .main-contents .drx_txt td {width: 83%; letter-spacing: -0.6px;}
+.main-contents .drx_txt td .t-point {display: inline-block; color: #fe1200;}
 .main-contents .txt_Wr {padding: 10px 0;}
 .main-contents .txt_Wr .d_txt {font-size: 16px; text-align: left; word-break: keep-all;}
 .main-contents .txt_Wr p:first-child {margin-top: 10px;}
@@ -36,3 +39,22 @@
 
 .bx-wrapper .bx-controls-direction {margin-top: -18px;}
 .bx-wrapper .bx-controls-direction a {width: 50px;}
+
+/* 20180518_객실안내 이미지 크기 맞추기_다솜 */
+.bx-wrapper .bx-viewport .bxS img {height: 100%; max-height: 303px;}
+
+.main-contents .area-arctic {position: relative; width: 980px; background: #f3f3f3; padding: 15px 100px; margin: 30px auto 0; box-sizing: border-box;}
+.main-contents .area-arctic > [class*=d-] {position: relative; display: inline-block; vertical-align: middle; line-height: 1.4; word-break: keep-all;}
+.main-contents .area-arctic > .d-1 {padding-right: 8px;}
+.main-contents .area-arctic > .d-2 {padding-left: 15px; border-left: 1px solid #a3b0c2; color: #285ba7; text-align: left; width: 78%; font-size: 15px;}
+
+/* 181214 온천수 띠배너 추가 다솜 */
+.bn-spa-area {position: relative; /*z-index: 58; position: fixed;*/ width: 100%; margin-top: 15px; text-align: center; background: #dfd9bf;}
+.bn-spa-area .bn-spa-box {position: relative; display: inline-block; max-width: 100%; margin: 0 auto; padding: 13px 0 8px;}
+.bn-spa-area .bn-spa-box img {position: relative;}
+.bn-amenity-area {background: #fffce8; padding: 12px 0;}
+.bn-amenity-area .bn-box {width: 980px; margin: 0 auto;}
+.bn-amenity-area .bn-box .bn-img, .bn-amenity-area .bn-box .txt {display: inline-block; vertical-align: middle;}
+.bn-amenity-area .bn-box .bn-img {width: 88px; margin-left: 80px; margin-right: 12px;}
+.bn-amenity-area .bn-box .c-blue {color: #0076ef; font-size: 18px;}
+.bn-amenity-area .bn-box .txt {word-break: keep-all;}

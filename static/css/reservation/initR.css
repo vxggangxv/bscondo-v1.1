@@ -32,6 +32,20 @@
 
 	/*#main5 {width: 980px;}*/
 
+	/* 20180321_오른쪽 퀵배너추가_다솜 */
+	.lWing-wrap {position: absolute; top:50px; right: 50%; margin-right: -693px; z-index: 20;}
+
+	.cont-side {position: absolute; top:50px;  z-index: 20;}
+	.cont-side.right {right: 50%; margin-right: -625px;}
+	.cont-side.right .item {position: relative; display: block; margin-top: 20px; color: #fff;}
+	.cont-side.right .item:first-child {margin-top: 0;}
+	/*.cont-side.right .item .txt-box,
+	.cont-side.right .item .row-more {position: absolute; width: 100%; text-align: center;}
+	.cont-side.right .item .txt-box {top: 23px;}
+	.cont-side.right .item .txt-box .p-1 {font-size: 17px; font-weight: 700;}
+	.cont-side.right .item .txt-box .p-2 {font-size: 16px;}
+	.cont-side.right .item .row-more {position: relative; display: block; bottom: 0; background: #ff7a2d; font-size: 15px; padding: 6px 0;}
+	.cont-side.right .item .row-more .rArrow:after {top: -1px; margin-right: -3px; border-color: #fff;}*/
 
 }
 

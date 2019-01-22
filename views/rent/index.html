@@ -10,18 +10,20 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 	<title>비에스앤리조트도고콘도</title>
 	
-	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/reset.css">
+	<link rel="stylesheet" href="http://static.bscondo.co.kr/css/reset.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.css">
 	<!--180410 나눔스퀘어 폰트 추가-->
 	<link rel="stylesheet" href="http://www.ocean2you.co.kr/fonts/nanumsquare/nanumsquare.css">
 
-	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/commonR.css">
-	<link rel="stylesheet" type="text/css" href="http://static.bscondo.co.kr/css/intro/initR-v1.1.css">
+	<link rel="stylesheet" href="http://static.bscondo.co.kr/css/commonR.css">
+	<link rel="stylesheet" href="http://static.bscondo.co.kr/css/rent/initR.css">
 
-	<!--<link rel="stylesheet" type="text/css" href="../../static/css/commonR.css"> 
-	<link rel="stylesheet" type="text/css" href="../../static/css/intro/initR-v1.1.css">-->
+	<!-- <link rel="stylesheet" type="text/css" href="../../static/css/commonR.css">  -->
+	<!-- <link rel="stylesheet" type="text/css" href="../../static/css/rent/initR.css"> -->
 	
 	
+	<!-- <script type="text/javascript" src="http://localhost:35729/livereload.js"></script> -->
+
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
@@ -144,10 +146,10 @@
 				<div class="glb clr">
 					<a href="#" class="gLogo"><img src="http://img.bscondo.co.kr/top_logo.png" alt="비에스앤리조트로고"></a>
 					
-					<div class="d1">
+					<!-- <div class="d1">
 						<a class="faq-a show-md" id="faq-a" href="#">무료객실 이벤트 당첨안내</a>
 						<a class="mFaq-a show-xs" id="mFaq-a" href="#"><span><img src="http://img.ocean2you.co.kr/renew/m_icon.png">이벤트 안내</span></a>
-					</div>
+					</div> -->
 				
 					<nav class="gNav show-md">
 						<ul class="gnb clr">
@@ -246,51 +248,184 @@
 		
 		<!-- 20180228 객실예약버튼 위치 변경 및 기존 버튼 제거 -->
 		<!-- 180213 모바일 객실예약 버튼 추가 -->
-		<!--<div class="m-rWing">
+		<!-- <div class="m-rWing">
 			<img src="http://img.bscondo.co.kr/intro/information_btn.png" alt="" style="cursor:pointer" onclick="javascript:reserve_list_loca();">
-			<!-- http://www.bscondo.co.kr/reservation/--
-		</div>
-		-->
+		</div> -->
+		
 		
 						
 		<div class="container" id="setTop">
-			<!-- 180410 리뉴얼 -->
-			<section class="main-contents2 cm-s">
-				<div class="bg-img"></div>
-				<div class="area-tit">
-					<h3>삶의 재충전, Eco Tourism</h3>
-					<p>BS콘도 도고온천 호텔앤리조트에 오신 것을 환영합니다.</p>
-					<div class="wing-box">
-						<a href="javascript:;" class="m-rWing2"><img class="cal" src="http://img.bscondo.co.kr/intro/i_cal_2.png" alt="달력아이콘">실시간 객실예약</a>
+			<!-- 190121 -->
+	        <div class="rent-wrap clr" id="setTop">
+	            <div class="img-area">
+	            	<figure class="nth-1"><img src="http://img.bscondo.co.kr/lodgment/detail/01.jpg" alt="도고BS콘도 소개이미지"></figure>
 
-						<a href="javascript:;" class="weath-wrap">
-							<div class="weath-box">
-								<p class="weath-img">
-									<!-- 이미지명 : 맑음 clear / 구름조금 cloud / 흐림 cloud2 / 비 rain / 눈 snow -->
-									<img src="http://img.ocean2you.co.kr/renew/weather/cloud2.png" alt="날씨">
-								</p>
-								<p class="weath-txt">
-									<span class="day">2018.02.27 (화)</span>
-									<span class="location">아산날씨 : 구름많음</span>
-								</p>
-								<p class="tem-txt">
-									<span class="tem-num">12</span>
-									<span class="tem-cel">°C</span>
-								</p>
-							</div>
-						</a>
+                    <figure class="nth-2"><img src="http://img.bscondo.co.kr/lodgment/detail/02_1.jpg" alt="도고BS콘도 소개이미지"></figure>
+
+                <div class="grid-wrap">
+						<div class="grid-contents grid-type-1">
+							<table class="tbl-base tbl-1">
+								<colgroup>
+									<col style="width:23%">
+									<col style="width:14%">
+									<col style="width:23%">
+									<col style="width:40%">
+								</colgroup>
+								<thead class="rowgroup">
+									<tr>
+										<th>객실타입</th>
+										<th>숙박기간</th>
+										<th>이용시 특혜</th>
+										<th>이용기간</th>
+									</tr>
+								</thead>
+								<tbody class="rowgroup">
+									<tr>
+										<td>
+											스탠다드트윈<br>
+											디럭스트리플
+										</td>
+										<td>
+											7일<br>
+											14일<br>
+											1개월<br>
+											6개월
+										</td>
+										<td class="nth-3">
+											<span class="fg-red-1 fwe-1">광과금 일체 포함<br>
+											(전기, 수도요금 등)</span>
+										</td>
+										<td class="nth-4">
+											<span class="fwe-1">7일부터 6개월까지 이용가능!</span>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+						<h2 class="tbl-tit">이용 시 예상 요금을 알아볼까요?</h2>
+						<div class="grid-contents grid-type-2">
+							<table class="tbl-base tbl-2">
+								<colgroup>
+									<col style="width:16%">
+									<col style="width:25%">
+									<col style="width:59%">
+								</colgroup>
+								<thead class="rowgroup">
+									<tr>
+										<th>객실타입</th>
+										<th>예상 체류기간</th>
+										<th>이용 시 예상요금</th>
+									</tr>
+								</thead>
+								<tbody class="rowgroup">
+									<tr>
+										<td class="nth-1">
+											<p class="row clr">
+												<span class="rdo-box">
+													<input type="radio" class="rdo">
+													<label for="" class="lbl">스탠다드트윈</label>
+												</span>
+											</p>
+											<p class="row clr">
+												<span class="rdo-box">
+													<input type="radio" class="rdo">
+													<label for="" class="lbl">디럭스트리플</label>
+												</span>
+											</p>
+										</td>
+										<td class="nth-2">
+											<p class="row clr">
+												<span class="inp-box">
+													<label for="" class="lbl">체크인</label>
+													<input type="text" class="inp">
+												</span>
+											</p>
+											<p class="row clr">
+												<span class="inp-box">
+													<label for="" class="lbl">체크아웃</label>
+													<input type="text" class="inp">
+												</span>
+											</p>
+											<p class="row clr">
+												<span class="inp-box">
+													<label for="" class="lbl">이용기간</label>
+													<input type="text" class="inp">
+												</span>
+											</p>
+											<p class="row clr">
+												<span class="inp-box">
+													<label for="" class="lbl">인원수</label>
+													<select name="" id="" class="slt">
+														<option value="">2</option>
+														<option value="">7</option>
+													</select>
+												</span>
+											</p>
+											<div class="row">
+												<button type="button" class="btn-base btn-gray flt-r">예상요금</button>
+											</div>
+										</td>
+										<td class="clr nth-3">
+											<div class="split-1">
+												<dl>
+													<dt>객실요금</dt>
+													<dd>70,000원</dd>
+												</dl>
+												<dl>
+													<dt>봉사료</dt>
+													<dd>7,000원</dd>
+												</dl>
+												<dl>
+													<dt>세금</dt>
+													<dd>2,200원</dd>
+												</dl>
+												<hr class="sun">
+												<dl>
+													<dt>총 예상요금</dt>
+													<dd>79,200원</dd>
+												</dl>
+											</div>
+											<div class="split-2">
+												<span class="fg-red-1">
+													이용기간 일별 표준요금 기준이며,<br>
+													장기이용은 전화 상담시 이용일자에 따라<br>
+													최대 40~50%의 할인요금을 안내해드립니다.<br>
+												</span>
+												<p class="row clr">
+													<button type="button" class="btn-base btn-gray">문의신청 010-8844-0409</button>
+												</p>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
 					</div>
+
+                    <figure class="nth-2"><img src="http://img.bscondo.co.kr/lodgment/detail/02_2.jpg" alt="도고BS콘도 소개이미지"></figure>
+
+					<a href="http://www.monopalace.com/home/monopalace/?dd=WxsuVwFPMEUv" target="_blank" style="display:block; margin-top: 10px;"><img src="http://img.ramadapt.co.kr/lodgment/detail/bn_mono.jpg" alt="모노팰리스배너" width="1000px"></a>
+
+                    <figure class="nth-3">
+						<img src="http://img.bscondo.co.kr/lodgment/detail/03.jpg" alt="도고BS콘도 소개이미지">
+						<a href="http://www.bscondo.co.kr/gallery/" class="btn-linkOc2" style="position: absolute; top:50px; right: 25px;"><img src="http://img.bscondo.co.kr/lodgment/detail/btn_linkFacil.png " alt="도고BS콘도 객실안내페이지로 이동"></a>
+					</figure>
+
+					<figure class="nth-4">
+						<img src="http://img.bscondo.co.kr/lodgment/detail/04.jpg" alt="도고BS콘도 소개이미지">
+						<a href="http://www.bscondo.co.kr/gallery/" class="btn-linkOc2" style="position: absolute; bottom: 76px; left: 50%; margin-left: -161.5px;">
+							<img src="http://img.bscondo.co.kr/lodgment/detail/btn_moreRoom.png" alt="도고BS콘도 객실안내 페이지로 이동">
+						</a>
+					</figure>
+
+					<a href="http://www.monopalace.com/home/monopalace/?dd=WxsuVwFPMEUv" target="_blank" style="display:block; margin-top: 10px;"><img src="http://img.ramadapt.co.kr/lodgment/detail/bn_mono.jpg" alt="모노팰리스배너" width="1000px"></a>
+
+                    <figure class="nth-5"><img src="http://img.bscondo.co.kr/lodgment/detail/05.jpg" alt="도고BS콘도 소개이미지"></figure>
+
+					<a href="http://www.monopalace.com/home/monopalace/?dd=WxsuVwFPMEUv" target="_blank" style="display:block; margin-top: 10px;"><img src="http://img.ramadapt.co.kr/lodgment/detail/bn_mono.jpg" alt="모노팰리스배너" width="1000px"></a>
 				</div>
-				<div class="btn-area hidden-xs">
-					<a href="javascript:;" class="btn-a a-1"><img src="http://img.bscondo.co.kr/intro/pic_peoples.png" alt="단체"> 단체예약 문의 하기<span class="ic-rArrow rArrow"></span></a>
-					<a href="javascript:;" class="btn-a a-2">예약하기<span class="ic-rArrow rArrow"></span></a>
-				</div>
-				<figure>
-					<img class="resortImg show-md" src="http://img.bscondo.co.kr/intro/intro_txt.jpg" alt="리조트소개">
-					<img class="resortImg show-xs" src="http://img.bscondo.co.kr/intro/intro_txt_m.jpg" alt="리조트소개">
-				</figure>
-			</section>
-			<!-- // -->
+	        </div>
+	        <!-- //.rent-wrap -->
 		</div>
 		
 		<!-- 이용약관/개인정보처리방침 팝업 -->
